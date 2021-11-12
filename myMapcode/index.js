@@ -1,6 +1,6 @@
 function initMap() {
   const myLatlng = { lat: 35.994, lng: 138.4299 };
-  const map = new google.maps.Map(document.getElementById("map"), {
+  /*const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 5,
     center: myLatlng,
   });
@@ -8,7 +8,7 @@ function initMap() {
   let infoWindow = new google.maps.InfoWindow({
     content: "Click the map to get Lat/Lng!",
     position: myLatlng,
-  });
+  });*/
 
   function getMapCode(latLng)
   {
@@ -20,6 +20,8 @@ function initMap() {
       console.log("Request complete! response:", res);
     });
   }
+  
+  console.log(getMapCode(JSON.parse('{ "lat": 35.399789539129706, "lng": 137.287321875 }')));
 
   //infoWindow.open(map);
   // Configure the click listener.
