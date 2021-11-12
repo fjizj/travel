@@ -21,7 +21,9 @@ function initMap() {
     });
   }
   
+  console.log('1');
   console.log(getMapCode(JSON.parse('{ "lat": 35.399789539129706, "lng": 137.287321875 }')));
+  console.log('2');
 
   //infoWindow.open(map);
   // Configure the click listener.
